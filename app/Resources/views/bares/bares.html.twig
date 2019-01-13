@@ -1,0 +1,109 @@
+{% extends 'base.html.twig' %}
+{% block title %}Bares{% endblock %}
+
+{% block body %}
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <h1 class="mt-4 mb-3">Bar de Paco
+            <small>Bares</small>
+        </h1>
+
+        {% if sitio == 'valencia' or sitio == 'todos' %}
+        <!-- BAR VALENCIA -->
+        <div class="row">
+            <!-- Map Column -->
+            <div class="col-lg-8 mb-4">
+                <!-- Embedded Google Map -->
+                <iframe width="100%" height="400px" frameborder="0"  marginheight="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.811389240464!2d-0.3811612842976233!3d39.47358947948598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4ea7d4e61b%3A0x1243035689245d8d!2sMercado+Central+de+Valencia!5e0!3m2!1ses-419!2sdo!4v1547392369547"></iframe>
+            </div>
+            <!-- Contact Details Column -->
+            <div class="col-lg-4 mb-4">
+                <h3>Detalles</h3>
+                <p>
+                    Plaça de la Ciutat de Bruges, s/n, 46001
+                    <br>València, España
+                    <br>
+                </p>
+                <p>
+                    <abbr title="Phone">P</abbr>: +34 963 82 91 00
+                </p>
+                <p>
+                    <abbr title="Email">E</abbr>:
+                    <a href="#">mercadocentralvalencia.es
+                    </a>
+                </p>
+                <p>
+                    <abbr title="Hours">H</abbr>: Martes - Viernes: 12:00 AM a 17:00 PM
+                </p>
+            </div>
+        </div>
+        {% endif %}
+        <!-- /.row -->
+
+        {% if sitio == 'barcelona' or sitio == 'todos' %}
+            <!-- BAR BARCELONA -->
+            <div class="row">
+                <!-- Map Column -->
+                <div class="col-lg-8 mb-4">
+                    <!-- Embedded Google Map -->
+                    <iframe width="100%" height="400px" frameborder="0"  marginheight="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47881.386499957815!2d2.1199241965568256!3d41.40478214109821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a3b185625025%3A0x59e80c780f7e2f0b!2sHotel+W+Barcelona!5e0!3m2!1ses-419!2sdo!4v1547406440792"></iframe>
+                </div>
+                <!-- Contact Details Column -->
+                <div class="col-lg-4 mb-4">
+                    <h3>Detalles</h3>
+                    <p>
+                        Plaça Rosa del Vents, 1 Final, Passeig de Joan de Borbó, 08039
+                        <br>Barcelona, España
+                        <br>
+                    </p>
+                    <p>
+                        <abbr title="Phone">P</abbr>: +34 932 95 28 00
+                    </p>
+                    <p>
+                        <abbr title="Email">E</abbr>:
+                        <a href="#">marriott.com
+                        </a>
+                    </p>
+                    <p>
+                        <abbr title="Hours">H</abbr>: Martes - Viernes: 12:00 AM a 17:00 PM
+                    </p>
+                </div>
+            </div>
+        {% endif %}
+        <!-- /.row -->
+
+        {% if sitio == 'madrid' or sitio == 'todos' %}
+            <!-- BAR Madrid -->
+            <div class="row">
+                <!-- Map Column -->
+                <div class="col-lg-8 mb-4">
+                    <!-- Embedded Google Map -->
+                    <iframe width="100%" height="400px" frameborder="0"  marginheight="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48586.23219117448!2d-3.669740959929844!3d40.43898056668843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228fe9c990dff%3A0x66b1eef2592375c!2sNYX+Hotel+Madrid!5e0!3m2!1ses-419!2sdo!4v1547406692356"></iframe>
+                </div>
+                <!-- Contact Details Column -->
+                <div class="col-lg-4 mb-4">
+                    <h3>Detalles</h3>
+                    <p>
+                        Calle del Aviador Zorita, 34, 28020
+                        <br>Madrid, España
+                        <br>
+                    </p>
+                    <p>
+                        <abbr title="Phone">P</abbr>: +34 915 53 59 00
+                    </p>
+                    <p>
+                        <abbr title="Email">E</abbr>:
+                        <a href="#">leonardo-hotels.es
+                        </a>
+                    </p>
+                    <p>
+                        <abbr title="Hours">H</abbr>: Martes - Viernes: 12:00 AM a 17:00 PM
+                    </p>
+                </div>
+            </div>
+        {% endif %}
+        <!-- /.row -->
+    </div>
+{% endblock %}
